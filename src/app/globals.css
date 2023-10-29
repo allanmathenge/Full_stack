@@ -5,6 +5,10 @@
     --softTextColor: #626262;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
