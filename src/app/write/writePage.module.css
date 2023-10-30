@@ -1,9 +1,20 @@
-.container {}
+.input {
+    padding: 50px;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input::placeholder {
+    color: #b3b3b1;
+}
 
 .editor {
     display: flex;
     gap: 20px;
     height: 700px;
+    position: relative;
 }
 
 .button,
@@ -23,6 +34,40 @@
     border-color: #1a8917;
 }
 
+.add {
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    left: 50px;
+}
+
+.AiOutlinePlus {
+    font-size: 24px;
+    color: var(--textColor);
+}
+
+.BsCardImage,
+.AiOutlineUpload,
+.AiOutlineVideoCameraAdd {
+    font-size: 24px;
+    color: #1a8917;
+}
+
 .textArea {
     width: 100%;
+}
+
+.publish {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
 }

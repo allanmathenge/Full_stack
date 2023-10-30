@@ -5,6 +5,8 @@ import styles from "./writePage.module.css"
 import Image from "next/image"
 import ReactQuill from "react-quill"
 import "react-quill/dist/quill.bubble.css"
+import { AiOutlinePlus, AiOutlineUpload, AiOutlineVideoCameraAdd } from 'react-icons/ai'
+import { BsCardImage } from 'react-icons/bs'
 
 const WritePage = () => {
 
@@ -13,36 +15,37 @@ const WritePage = () => {
 
     return (
         <div className={styles.container}>
-            <input type="text" placeholder="Title" />
+            <input type="text" placeholder="Title" className={styles.input} />
             <div className={styles.editor}>
                 <button
                     className={styles.button}
                     onClick={() => setOpen((prev) => (!prev))}
                 >
-                    <Image src="/plus.png" alt="" width={16} height={16} />
+                    <AiOutlinePlus className={styles.AiOutlinePlus} />
 
                 </button>
                 {open && (
                     <div className={styles.add}>
                         <button className={styles.addButton}>
-                            <Image src="/image.png" alt="" width={16} height={16} />
+                            <BsCardImage className={styles.BsCardImage} />
                         </button>
                         <button className={styles.addButton}>
-                            <Image src="/external.png" alt="" width={16} height={16} />
+                            <AiOutlineUpload className={styles.AiOutlineUpload} />
                         </button>
                         <button className={styles.addButton}>
-                            <Image src="/video.png" alt="" width={16} height={16} />
+                            <AiOutlineVideoCameraAdd className={styles.AiOutlineVideoCameraAdd} />
                         </button>
                     </div>
                 )}
                 <ReactQuill
-                    className= {styles.textArea}
+                    className={styles.textArea}
                     theme="bubble"
                     value={value}
                     onChange={setValue}
                     placeholder="Write your idea..."
                 />
             </div>
+            <button className={styles.publish}>Publish</button>
         </div>
     )
 }

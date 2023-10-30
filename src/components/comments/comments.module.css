@@ -19,7 +19,12 @@
     width: 100%;
     background-color: rgb(219, 232, 232);
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
+    outline: none;
+}
+
+.input::placeholder {
+    font-size: 20px;
 }
 
 .button {
