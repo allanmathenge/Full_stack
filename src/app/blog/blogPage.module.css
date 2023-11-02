@@ -1,4 +1,5 @@
 .title {
+    text-transform: capitalize;
     background-color: coral;
     color: white;
     padding: 5px 10px;
