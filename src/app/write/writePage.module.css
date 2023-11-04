@@ -24,6 +24,7 @@
     border: none;
     outline: none;
     background-color: transparent;
+    color: var(--textColor);
 }
 
 .input::placeholder {
@@ -74,6 +75,7 @@
 .AiOutlineVideoCameraAdd {
     font-size: 24px;
     color: #1a8917;
+    cursor: pointer;
 }
 
 .textArea {
