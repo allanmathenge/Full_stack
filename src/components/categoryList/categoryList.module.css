@@ -26,23 +26,31 @@
     background-color: #57c4ff31;
 }
 
-.category.fashion {
+.category.CSS {
     background-color: #da85c731;
 }
 
-.category.food {
+.category.Python {
     background-color: #7fb88133;
 }
 
-.category.travel {
+.category.JavaScript {
     background-color: #ff795736;
 }
 
-.category.culture {
-    background-color: #ffb04f45;
+.category.MongoDB {
+    background-color: #906c4045;
 }
 
-.category.coding {
+.category.Auth {
+    background-color: #cc934e45;
+}
+
+.category.Node {
+    background-color: #4a495031;
+}
+
+.category.MERN {
     background-color: #5e4fff31;
 }
 

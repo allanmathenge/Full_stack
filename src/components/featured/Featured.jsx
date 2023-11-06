@@ -6,16 +6,15 @@ const Featured = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>
-                <b className={styles.bold}>Hey, Allan Here!</b> Discover Technical blogs & Explore new ideas
+                <b className={styles.bold}> Discover top Tech articles, blogs</b> & ideas today
             </h1>
             <div className={styles.post}>
                 <div className={styles.imgContainer}>
-                    <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+                    <Image src="/p2.jpg" alt="" fill className={styles.image} />
                 </div>
                 <div className={styles.textContainer}>
-                    <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet?</h1>
-                    <p className={styles.postDesc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum corrupti placeat itaque expedita atque blanditiis est cumque tenetur! Veniam molestias perspiciatis optio explicabo aspernatur sapiente ipsa, dolorum enim consequuntur tempora.
-                    </p>
+                    <h1 className={styles.postTitle}>Top ideas</h1>
+                    <p className={styles.postDesc}>Here are five concepts you can learn from The A to Z of MERN stack and Python using simple to understand examples, series of great ideas, insights and explanations to help you understand and distinguish facts from fiction</p>
                     <button className={styles.button}>Read More</button>
                 </div>
             </div>

@@ -6,19 +6,22 @@ const MenuCategories = () => {
     return (
         <div className={styles.categoryList}>
             <Link href="/blog?cat=style" className={`${styles.categoryItem} ${styles.style}`}>
-                Style
+                Python
             </Link>
             <Link href="/blog" className={`${styles.categoryItem} ${styles.fashion}`}>
-                Fashion
+                JavaScript
             </Link>
             <Link href="/blog" className={`${styles.categoryItem} ${styles.travel}`}>
-                Travel
+                Node.Js
             </Link>
             <Link href="/blog" className={`${styles.categoryItem} ${styles.culture}`}>
-                Culture
+                MongoDB
             </Link>
             <Link href="/blog" className={`${styles.categoryItem} ${styles.coding}`}>
-                Coding
+                CSS
+            </Link>
+            <Link href="/blog" className={`${styles.categoryItem} ${styles.coding}`}>
+                Auth
             </Link>
         </div>
     )
