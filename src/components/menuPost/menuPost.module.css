@@ -32,31 +32,39 @@
 }
 
 .category {
-    padding: 3px 8px;
+    padding: 5px 8px;
     border-radius: 10px;
     font-size: 12px;
     color: #fff;
     width: max-content;
 }
 
-.Python {
+.category.python {
     background-color: #ff7857;
 }
 
-.culture {
-    background-color: #ffb14f;
+.category.node {
+    background-color: #4f90ff;
 }
 
-.food {
+.category.css {
     background-color: #7fb881;
 }
 
-.fashion {
-    background-color: #ff7887;
+.category.javascript {
+    background-color: #d778ff;
 }
 
-.coding {
-    background-color: #775aec;
+.category.mongodb {
+    background-color: #5a70ec;
+}
+
+.category.title {
+    background-color: #ec5aa5;
+}
+
+.category.auth {
+    background-color: #5aecbe;
 }
 
 .postTitle {

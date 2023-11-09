@@ -1,20 +1,22 @@
-import React from 'react'
 import styles from "./navbar.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import ThemeToggle from '../themeToggle/ThemeToggle'
 import AuthLinks from '../authLinks/AuthLinks'
+import { RiTwitterXLine } from 'react-icons/ri'
+import { BsLinkedin, BsFacebook, BsYoutube } from 'react-icons/bs'
+
 
 const Navbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.social}>
-                <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-                <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-                <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
-                <Image src="/youtube.png" alt="youtube" width={24} height={24} />
+                <RiTwitterXLine style={{ color: "#316FF6" }} />
+                <BsLinkedin style={{ color: "#0E76A8" }} />
+                <BsFacebook style={{ color: "#3b5998" }} />
+                <BsYoutube style={{ color: "#CD201F" }} />
             </div>
-            <div className={styles.logo}>AllanBlogs</div>
+            <div className={styles.logo}>allanBlgs</div>
             <div className={styles.links}>
                 <ThemeToggle />
                 <Link href="/" className={styles.link}>Homepage</Link>

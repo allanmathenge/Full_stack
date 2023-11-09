@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const getData = async () => {
-    const res = await fetch("http://localhost:3000/api/categories", {
+    const res = await fetch("http://localhost:3000/api/populars", {
         cache: "no-store"
     })
     if (!res.ok) {
@@ -15,7 +15,7 @@ const getData = async () => {
 
 const MenuPost = async ({ withImage }) => {
 
-    const data = await getData()
+    const data = await getData();
 
     return (
         <div className={styles.items}>
@@ -23,15 +23,15 @@ const MenuPost = async ({ withImage }) => {
                 <Link href="/" className={styles.item} key={item._id}>
                     {withImage && (
                         <div className={styles.imageContainer}>
-                            <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+                            <Image src="/p2.jpg" alt="" fill className={styles.image} />
                         </div>
                     )}
                     <div className={styles.textContainer}>
-                        <span className={`${styles.category} ${styles.title}`}>{item.title}</span>
-                        <h3 className={styles.postTitle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellat nesciunt.</h3>
+                        <span className={`${styles.category} ${styles[item.slug]}`}>{item.title}</span>
+                        <h3 className={styles.postTitle}>{item.desc}</h3>
                         <div className={styles.detail}>
                             <span className={styles.username}>Allan Mathenge - </span>
-                            <span className={styles.date}>{item.createdAt}</span>
+                            <span className={styles.date}>{item.createdAt.substring(0, 10)}</span>
                         </div>
                     </div>
                 </Link>
